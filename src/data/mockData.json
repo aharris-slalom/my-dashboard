@@ -1,0 +1,272 @@
+{
+  "departments": [
+    {
+      "name": "Pharmacy",
+      "units": [
+        {
+          "id": "PHM-001",
+          "unitName": "Vaccine Cold Vault",
+          "assetType": "Vaccines",
+          "assetValue": 320000,
+          "currentTemp": 5.1,
+          "minTemp": 2.0,
+          "maxTemp": 8.0,
+          "status": "Optimal",
+          "timeOutOfRangeSeconds": 0,
+          "humidity": 48,
+          "last_audit_passed": true,
+          "sensorHealth": { "battery": 96, "signalStrength": "Excellent" },
+          "location": "Pharmacy Wing A",
+          "history": [5.0, 5.1, 5.2, 5.1, 5.1, 5.1, 5.2, 5.1]
+        },
+        {
+          "id": "PHM-002",
+          "unitName": "Biologics Refrigerator",
+          "assetType": "Biologics",
+          "assetValue": 145000,
+          "currentTemp": 8.1,
+          "minTemp": 2.0,
+          "maxTemp": 8.0,
+          "status": "Warning",
+          "timeOutOfRangeSeconds": 7,
+          "humidity": 55,
+          "last_audit_passed": false,
+          "sensorHealth": { "battery": 88, "signalStrength": "Good" },
+          "location": "Pharmacy Wing B",
+          "history": [7.8, 7.9, 8.0, 8.1, 8.1, 8.2, 8.1, 8.1]
+        },
+        {
+          "id": "PHM-003",
+          "unitName": "Cold Chain Cabinet 3",
+          "assetType": "Pharmaceuticals",
+          "assetValue": 87000,
+          "currentTemp": 3.4,
+          "minTemp": 2.0,
+          "maxTemp": 8.0,
+          "status": "Optimal",
+          "timeOutOfRangeSeconds": 0,
+          "humidity": 52,
+          "last_audit_passed": true,
+          "sensorHealth": { "battery": 92, "signalStrength": "Excellent" },
+          "location": "Pharmacy Wing C",
+          "history": [3.4, 3.4, 3.5, 3.4, 3.3, 3.4, 3.4, 3.4]
+        }
+      ]
+    },
+    {
+      "name": "Blood Bank",
+      "units": [
+        {
+          "id": "BLD-101",
+          "unitName": "Donor Blood Cooler",
+          "assetType": "Blood Units",
+          "assetValue": 215000,
+          "currentTemp": 4.1,
+          "minTemp": 4.0,
+          "maxTemp": 6.0,
+          "status": "Optimal",
+          "timeOutOfRangeSeconds": 0,
+          "humidity": 62,
+          "last_audit_passed": true,
+          "sensorHealth": { "battery": 82, "signalStrength": "Good" },
+          "location": "Blood Bank Core",
+          "history": [4.3, 4.2, 4.1, 4.1, 4.1, 4.0, 4.1, 4.1]
+        },
+        {
+          "id": "BLD-102",
+          "unitName": "Platelet Storage Unit",
+          "assetType": "Platelets",
+          "assetValue": 78000,
+          "currentTemp": 5.5,
+          "minTemp": 4.0,
+          "maxTemp": 6.0,
+          "status": "Optimal",
+          "timeOutOfRangeSeconds": 0,
+          "humidity": 57,
+          "last_audit_passed": true,
+          "sensorHealth": { "battery": 90, "signalStrength": "Excellent" },
+          "location": "Blood Bank Annex",
+          "history": [5.5, 5.5, 5.4, 5.5, 5.6, 5.5, 5.5, 5.5]
+        },
+        {
+          "id": "BLD-103",
+          "unitName": "Plasma Cryo Vault",
+          "assetType": "Plasma",
+          "assetValue": 119500,
+          "currentTemp": 6.4,
+          "minTemp": 2.0,
+          "maxTemp": 6.0,
+          "status": "Critical",
+          "timeOutOfRangeSeconds": 18,
+          "humidity": 64,
+          "last_audit_passed": false,
+          "sensorHealth": { "battery": 76, "signalStrength": "Fair" },
+          "location": "Blood Bank Secure",
+          "history": [6.1, 6.2, 6.3, 6.4, 6.4, 6.5, 6.4, 6.4]
+        }
+      ]
+    },
+    {
+      "name": "Laboratory",
+      "units": [
+        {
+          "id": "LAB-201",
+          "unitName": "Specimen Freezer",
+          "assetType": "Tissue Samples",
+          "assetValue": 450000,
+          "currentTemp": -19.5,
+          "minTemp": -25.0,
+          "maxTemp": -15.0,
+          "status": "Optimal",
+          "timeOutOfRangeSeconds": 0,
+          "humidity": 12,
+          "last_audit_passed": true,
+          "sensorHealth": { "battery": 98, "signalStrength": "Excellent" },
+          "location": "Main Lab",
+          "history": [-20.1, -19.8, -19.5, -19.5]
+        },
+        {
+          "id": "LAB-202",
+          "unitName": "Reagent Chiller",
+          "assetType": "Chemical Reagents",
+          "assetValue": 62000,
+          "currentTemp": 4.0,
+          "minTemp": 2.0,
+          "maxTemp": 8.0,
+          "status": "Optimal",
+          "timeOutOfRangeSeconds": 0,
+          "humidity": 40,
+          "last_audit_passed": true,
+          "sensorHealth": { "battery": 85, "signalStrength": "Good" },
+          "location": "West Lab",
+          "history": [4.1, 4.0, 4.0, 4.0]
+        }
+      ]
+    },
+    {
+      "name": "Surgical Suite",
+      "units": [
+        {
+          "id": "SRG-301",
+          "unitName": "Rapid-Access Blood Cooler",
+          "assetType": "Emergency Blood",
+          "assetValue": 95000,
+          "currentTemp": 4.5,
+          "minTemp": 4.0,
+          "maxTemp": 6.0,
+          "status": "Optimal",
+          "timeOutOfRangeSeconds": 0,
+          "humidity": 58,
+          "last_audit_passed": true,
+          "sensorHealth": { "battery": 72, "signalStrength": "Good" },
+          "location": "OR-1",
+          "history": [4.5, 4.5, 4.5, 4.5]
+        }
+      ]
+    },
+    {
+      "name": "Research Wing",
+      "units": [
+        {
+          "id": "RES-401",
+          "unitName": "Genomics Cold Storage",
+          "assetType": "DNA Samples",
+          "assetValue": 680000,
+          "currentTemp": -78.2,
+          "minTemp": -85.0,
+          "maxTemp": -70.0,
+          "status": "Optimal",
+          "timeOutOfRangeSeconds": 0,
+          "humidity": 5,
+          "last_audit_passed": true,
+          "sensorHealth": { "battery": 94, "signalStrength": "Excellent" },
+          "location": "Level 4 Vault",
+          "history": [-78.5, -78.2, -78.2, -78.1]
+        }
+      ]
+    },
+    {
+      "name": "Oncology",
+      "units": [
+        {
+          "id": "ONC-501",
+          "unitName": "Chemo Med Station",
+          "assetType": "Cytotoxics",
+          "assetValue": 210000,
+          "currentTemp": 3.8,
+          "minTemp": 2.0,
+          "maxTemp": 8.0,
+          "status": "Optimal",
+          "timeOutOfRangeSeconds": 0,
+          "humidity": 45,
+          "last_audit_passed": true,
+          "sensorHealth": { "battery": 89, "signalStrength": "Good" },
+          "location": "Oncology Clinic",
+          "history": [3.9, 3.8, 3.8, 3.8]
+        }
+      ]
+    }
+  ],
+  "in_transit_shipments": [
+    {
+      "id": "TRK-001",
+      "contents": "Type O- Blood",
+      "currentTemp": 4.2,
+      "risk_level": "low",
+      "x": 150,
+      "y": 200,
+      "origin": "RDU Airport",
+      "eta": "14 mins"
+    },
+    {
+      "id": "TRK-002",
+      "contents": "COVID-19 Vaccines",
+      "currentTemp": 6.8,
+      "risk_level": "high",
+      "x": 300,
+      "y": 150,
+      "origin": "Distribution Hub",
+      "eta": "8 mins"
+    },
+    {
+      "id": "TRK-003",
+      "contents": "Biologics",
+      "currentTemp": 5.0,
+      "risk_level": "low",
+      "x": 450,
+      "y": 250,
+      "origin": "Regional Lab",
+      "eta": "32 mins"
+    },
+    {
+      "id": "TRK-004",
+      "contents": "Rare Plasma Units",
+      "currentTemp": 5.2,
+      "risk_level": "low",
+      "x": 100,
+      "y": 400,
+      "origin": "Downtown Clinic",
+      "eta": "21 mins"
+    },
+    {
+      "id": "TRK-005",
+      "contents": "Research Strains",
+      "currentTemp": -22.1,
+      "risk_level": "medium",
+      "x": 500,
+      "y": 100,
+      "origin": "University Center",
+      "eta": "45 mins"
+    },
+    {
+      "id": "TRK-006",
+      "contents": "Experimental Vaccines",
+      "currentTemp": 4.4,
+      "risk_level": "low",
+      "x": 220,
+      "y": 330,
+      "origin": "North Dallas Hub",
+      "eta": "12 mins"
+    }
+  ]
+}

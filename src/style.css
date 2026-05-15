@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg: #0f172a;
+  --bg-end: #071327;
+  --surface: rgba(15, 23, 42, 0.95);
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.10);
+  --card-shadow: 0 20px 80px rgba(15, 23, 42, 0.35);
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --accent-emerald: #10b981;
+  --accent-blue: #3b82f6;
+  --accent-coral: #fb7185;
+}
+
+html.light {
+  color-scheme: light;
+  --bg: #f8fafc;
+  --bg-end: #e2e8f0;
+  --surface: rgba(255, 255, 255, 0.80);
+  --card-bg: rgba(255, 255, 255, 0.80);
+  --card-border: rgba(148, 163, 184, 0.60);
+  --card-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --accent-emerald: #10b981;
+  --accent-blue: #2563eb;
+  --accent-coral: #e11d48;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg), var(--bg-end));
+  color: var(--text-primary);
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+.bg-card {
+  background-color: var(--card-bg) !important;
+}
+
+.border-card {
+  border-color: var(--card-border) !important;
+}
+
+.shadow-card {
+  box-shadow: var(--card-shadow) !important;
+}
+
+.text-primary {
+  color: var(--text-primary) !important;
+}
+
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+html.light .bg-\[\#0f172a\] {
+  background-color: var(--bg) !important;
+}
+
+html.light .bg-slate-950\/95,
+html.light .bg-slate-950\/70,
+html.light .bg-slate-900\/70,
+html.light .bg-slate-900\/95,
+html.light .bg-slate-900\/40,
+html.light .bg-slate-950\/75,
+html.light .bg-white\/5,
+html.light .bg-white\/10 {
+  background-color: var(--surface) !important;
+}
+
+html.light .bg-slate-800 {
+  background-color: rgba(15, 23, 42, 0.06) !important;
+}
+
+html.light .text-white,
+html.light .text-slate-100 {
+  color: var(--text-primary) !important;
+}
+
+html.light .text-slate-200,
+html.light .text-slate-300,
+html.light .text-slate-400,
+html.light .text-slate-500,
+html.light .text-slate-600 {
+  color: var(--text-secondary) !important;
+}
+
+html.light .border-white\/10 {
+  border-color: var(--card-border) !important;
+}
+
+html.light .shadow-glow {
+  box-shadow: 0 20px 80px rgba(15, 23, 42, 0.12) !important;
+}
+
+html.light .text-brand-blue {
+  color: var(--accent-blue) !important;
+}
+
+html.light .bg-brand-blue\/15 {
+  background-color: rgba(37, 99, 235, 0.15) !important;
+}
+
+html.light .hover\:bg-brand-blue\/25:hover {
+  background-color: rgba(37, 99, 235, 0.25) !important;
+}
+
+html.light .text-brand-coral {
+  color: var(--accent-coral) !important;
+}
+
+html.light .bg-brand-coral\/15 {
+  background-color: rgba(225, 29, 72, 0.15) !important;
+}
+
+html.light .hover\:bg-brand-coral\/25:hover {
+  background-color: rgba(225, 29, 72, 0.25) !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.leaflet-popup-content-wrapper {
+  background: rgba(15, 23, 42, 0.95);
+  color: #f8fafc;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(16px);
+}
+
+.leaflet-popup-tip {
+  background: rgba(15, 23, 42, 0.95);
+}
+
+.leaflet-popup-content {
+  margin: 8px;
+}
+
+#root {
+  min-height: 100vh;
+}
